@@ -1,0 +1,146 @@
+.footer {
+    background: #F7F7F8;
+    padding: 60px 80px 30px;
+    color: #444;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+}
+
+.logo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.logo img {
+    width: 42px;
+}
+
+.logo h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #888;
+}
+
+.desc {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contact {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: #ff3b30;
+}
+
+.newsletter {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+}
+
+.newsletter button {
+    background: #ff3b30;
+    border: none;
+    padding: 0 16px;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.socials span {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.bottom {
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bottom span {
+    color: #ff3b30;
+}
+
+@media (max-width: 1024px) {
+    .footerGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footerGrid {
+        grid-template-columns: 1fr;
+    }
+}
