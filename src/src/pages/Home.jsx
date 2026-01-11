@@ -5,6 +5,9 @@ import pngwing from '../../assets/Image/pngwing.png'
 import product1 from '../../assets/Image/product5-1.png'
 import bannerdeals from '../../assets/Image/bannerdeals.png'
 import Fattoushsalad from '../../assets/Image/Fattoushsalad.png'
+import image28 from '../../assets/Image/image28.png'
+import stayhome from '../../assets/Image/stayhome.png'
+
 function Home(props) {
     return (
         <>
@@ -243,7 +246,31 @@ function Home(props) {
                                 <button className={styles.addBtn}>🛒 Add</button>
                             </div>
                         </div>
-                    </div> <div className={styles.card}>
+                    </div>
+                    <div className={styles.card}>
+                        <img src={bannerdeals} alt="product" />
+                        <div className={styles.cardContent}>
+                            <h3>Seeds of Change Organic Quinoa, Brown, & Red Rice</h3>
+
+                            <div className={styles.rating}>
+                                ⭐ <span>(4.0)</span>
+                            </div>
+
+                            <p className={styles.brand}>
+                                By <span>NestFood</span>
+                            </p>
+
+                            <div className={styles.priceRow}>
+                                <div>
+                                    <span className={styles.price}>$32.85</span>
+                                    <span className={styles.oldPrice}>$33.8</span>
+                                </div>
+
+                                <button className={styles.addBtn}>🛒 Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.card}>
                         <img src={bannerdeals} alt="product" />
 
                         <div className={styles.cardContent}>
@@ -267,7 +294,7 @@ function Home(props) {
                             </div>
                         </div>
                     </div>
-                     <div className={styles.card}>
+                    <div className={styles.card}>
                         <img src={bannerdeals} alt="product" />
 
                         <div className={styles.cardContent}>
@@ -286,41 +313,116 @@ function Home(props) {
                                     <span className={styles.price}>$32.85</span>
                                     <span className={styles.oldPrice}>$33.8</span>
                                 </div>
-
                                 <button className={styles.addBtn}>🛒 Add</button>
                             </div>
                         </div>
                     </div>
-                     <div className={styles.card}>
-                        <img src={bannerdeals} alt="product" />
-
-                        <div className={styles.cardContent}>
-                            <h3>Seeds of Change Organic Quinoa, Brown, & Red Rice</h3>
-
-                            <div className={styles.rating}>
-                                ⭐ <span>(4.0)</span>
-                            </div>
-
-                            <p className={styles.brand}>
-                                By <span>NestFood</span>
-                            </p>
-
-                            <div className={styles.priceRow}>
-                                <div>
-                                    <span className={styles.price}>$32.85</span>
-                                    <span className={styles.oldPrice}>$33.8</span>
-                                </div>
-
-                                <button className={styles.addBtn}>🛒 Add</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Repeat card */}
                 </div>
-              
             </section>
+            <section className={styles.stayhomewithus}>
+                <div>
+                    <img src={stayhome} alt='stayhome' />
+                </div>
+                <div className={styles.styhome}>
+                    <div className={styles.infoCard}>
+                        <div className={styles.icon}>
+                            💸
+                        </div>
 
+                        <div className={styles.text}>
+                            <h4>Best prices & offers</h4>
+                            <p>Orders $50 or more</p>
+                        </div>
+                    </div>
+                    <div className={styles.infoCard}>
+                        <div className={styles.icon}>
+                            💸
+                        </div>
+
+                        <div className={styles.text}>
+                            <h4>Best prices & offers</h4>
+                            <p>Orders $50 or more</p>
+                        </div>
+                    </div>
+                    <div className={styles.infoCard}>
+                        <div className={styles.icon}>
+                            💸
+                        </div>
+
+                        <div className={styles.text}>
+                            <h4>Best prices & offers</h4>
+                            <p>Orders $50 or more</p>
+                        </div>
+                    </div>
+                    <div className={styles.infoCard}>
+                        <div className={styles.icon}>
+                            💸
+                        </div>
+
+                        <div className={styles.text}>
+                            <h4>Best prices & offers</h4>
+                            <p>Orders $50 or more</p>
+                        </div>
+                    </div>
+                    <div className={styles.infoCard}>
+                        <div className={styles.icon}>
+                            💸
+                        </div>
+
+                        <div className={styles.text}>
+                            <h4>Best prices & offers</h4>
+                            <p>Orders $50 or more</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className={styles.whyChoose}>
+                <div className={styles.container}>
+                    {/* Left Image */}
+                    <div className={styles.imageBox}>
+                        <img src={image28} alt="Why choose us" />
+                    </div>
+
+                    {/* Right Content */}
+                    <div className={styles.content}>
+                        <h2 className={styles.title}>Why People Choose us?</h2>
+
+                        <div className={styles.card}>
+                            <div>
+                                <div className={styles.icon}>🚚</div>
+                                <h4>Convenient and Reliable</h4>
+                                <p>
+                                    Whether you dine in, take out, or order delivery, our service is
+                                    convenient, fast, and reliable, making mealtime hassle-free.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={styles.card}>
+                            <div>
+                                <div className={styles.icon}>🥫</div>
+                                <h4>Variety of Options</h4>
+                                <p>
+                                    From hearty meals to light snacks, we offer a wide range of options
+                                    to suit every taste and craving.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={styles.card}>
+                            <div>
+                                <div className={styles.icon}>🍔</div>
+
+                                <h4>Eat Burger</h4>
+                                <p>
+                                    Our burgers are grilled to perfection, with juicy patties and
+                                    flavorful toppings that make every bite a delicious experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

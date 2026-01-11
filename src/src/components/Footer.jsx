@@ -1,6 +1,12 @@
 import React from 'react'
 import styles from '../../assets/css/Footer.module.css'
 import boyimage from '../../assets/Image/boyimage.png'
+import footerimg1 from '../../assets/Image/footerimg1.png'
+import footerimg2 from '../../assets/Image/footerimg2.png'
+import footerimg3 from '../../assets/Image/footerimg3.png'
+import footerimg4 from '../../assets/Image/footerimg4.png'
+import footerimg5 from '../../assets/Image/footerimg5.png'
+
 function Footer(props) {
     return (
         <>
@@ -71,10 +77,11 @@ function Footer(props) {
                         </div>
 
                         <div className={styles.gallery}>
-                            <img src="/g1.jpg" />
-                            <img src="/g2.jpg" />
-                            <img src="/g3.jpg" />
-                            <img src="/g4.jpg" />
+                            <img src={footerimg1} />
+                            <img src={footerimg2} />
+                            <img src={footerimg3} />
+                            <img src={footerimg4} />
+                            <img src={footerimg5} />
                         </div>
                     </div>
                 </div>

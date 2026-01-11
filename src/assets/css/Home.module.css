@@ -103,7 +103,7 @@
 }
 
 /* ===== Header ===== */
-.header {
+.bestSells .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -266,7 +266,7 @@
     color: #fff;
 }
 
-.header {
+.specialSection .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -459,6 +459,120 @@
     font-size: 14px;
 }
 
+.whyChoose {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.whyChoose .container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.whyChoose .imageBox img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.whyChoose .title {
+    font-size: 36px;
+}
+
+.whyChoose .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.whyChoose .card {
+    background: #fff;
+    color: #222;
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    border-radius: 14px;
+    align-items: flex-start;
+}
+
+.whyChoose .card h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.whyChoose .card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.whyChoose .icon {
+    min-width: 54px;
+    height: 54px;
+    /* border-radius: 50%; */
+    background: #fff4e5;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+}
+
+
+/* stay home */
+.stayhomewithus {
+    padding: 20px 40px;
+}
+
+.stayhomewithus img {
+    width: 100%;
+}
+
+.styhome {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.infoCard {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #f7f9fc;
+    padding: 18px 22px;
+    border-radius: 14px;
+    max-width: 320px;
+}
+
+.infoCard .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #e9fff3;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    color: #21b573;
+}
+
+.infoCard .text h4 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+    color: #111;
+}
+
+.infoCard .text p {
+    font-size: 14px;
+    margin: 4px 0 0;
+    color: #777;
+}
+
+
+
+
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
     .content {
@@ -527,5 +641,27 @@
 
     .dealsSection {
         padding: 40px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .whyChoose .container {
+        grid-template-columns: 1fr;
+    }
+
+    .whyChoose .title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .whyChoose {
+        padding: 50px 20px;
+    }
+
+    .whyChoose .card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 }
