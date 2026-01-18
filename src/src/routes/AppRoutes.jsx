@@ -5,6 +5,9 @@ import Products from '../pages/Products';
 import ProductDetail from '../pages/ProductDetail';
 import Cart from '../pages/Cart';
 import NotFound from '../pages/NotFound';
+import BlogPost from '../pages/BlogPost';
+import Registration from '../pages/Registration';
+import Login from '../pages/Login';
 function AppRoutes(props) {
     return (
         <>
@@ -13,9 +16,12 @@ function AppRoutes(props) {
                 <Route path="/products" element={<Products />} />
                 <Route path="/product/:id" element={<ProductDetail />} />
                 <Route path="/cart" element={<Cart />} />
-                {/* <Route path="/checkout" element={<Checkout />} />
+                <Route path="/blog" element={<BlogPost />} />
+                <Route path="/register" element={<Registration />} />
                 <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} /> */}
+
+                {/* <Route path="/checkout" element={<Checkout />} />
+                <Route path="/login" element={<Login />} />*/}
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </>

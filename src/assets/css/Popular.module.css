@@ -1,0 +1,125 @@
+/* most popular product */
+
+.wrapper {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+}
+.productsPage {
+    background: #ffffff;
+    padding: 80px 60px;
+}
+
+.popularWrapper {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.heading {
+    color: #1a1818;
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.subHeading {
+    color: #aaa;
+    font-size: 14px;
+    max-width: 700px;
+    margin: 0 auto 0px;
+}
+
+/* GRID */
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.productCard {
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* IMAGE */
+.imageBox {
+    background: #f8f8f8;
+    border-radius: 6px;
+    padding: 20px;
+    position: relative;
+}
+
+.imageBox img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.cartIcon {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 14px;
+    box-shadow: 0 0 0 1px #ddd;
+}
+
+/* TEXT */
+.category {
+    margin-top: 30px;
+    color: #888;
+    font-size: 13px;
+}
+
+.rating {
+    color: #ff9f43;
+    font-size: 14px;
+}
+
+.rating span {
+    color: #777;
+}
+
+.title {
+    font-size: 15px;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+/* PRICE */
+.price {
+    margin-top: 10px;
+}
+
+.newPrice {
+    color: red;
+    font-weight: bold;
+}
+
+.oldPrice {
+    margin-left: 8px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .productsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .productsGrid {
+        grid-template-columns: 1fr;
+    }
+}

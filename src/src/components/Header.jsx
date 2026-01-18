@@ -6,7 +6,9 @@ import call from '../../assets/Image/call.png'
 import chart from '../../assets/Image/chart.png'
 import bag from '../../assets/Image/bag.png'
 import search from '../../assets/Image/search.png'
+import { useNavigate } from 'react-router-dom'
 function Header(props) {
+    const navigate = useNavigate()
     return (
         <>
             <header className={styles.header}>
@@ -15,14 +17,14 @@ function Header(props) {
                     <button className={styles.menuBtn}>☰</button>
 
                     <nav className={styles.topNav}>
-                        <a href="/">Home</a>
+                        <a onClick={() => navigate('/')}>Home</a>
 
                         <div className={styles.dropdown}>
                             <span>Category</span>
                         </div>
 
                         <div className={styles.dropdown}>
-                            <span>Products</span>
+                            <span onClick={() => navigate('/products')}>Products</span>
                         </div>
 
                         <div className={styles.dropdown}>
@@ -30,7 +32,7 @@ function Header(props) {
                         </div>
 
                         <div className={styles.dropdown}>
-                            <span>Blog</span>
+                            <span onClick={() => navigate('/blog')}>Blog</span>
                         </div>
 
                         <div className={styles.dropdown}>
@@ -75,7 +77,7 @@ function Header(props) {
 
                     {/* Actions */}
                     <div className={styles.actions}>
-                        <button className={styles.actionItem}>
+                        <button className={styles.actionItem} onClick={() => navigate('/register')}>
                             <img src={profile} alt='logo' /> <span>Account</span>
                         </button>
 
@@ -83,7 +85,7 @@ function Header(props) {
                             <img src={chart} alt='chart' /> <span>Wishlist</span>
                         </button>
 
-                        <button className={styles.actionItem}>
+                        <button className={styles.actionItem} onClick={() => navigate('/cart')}>
                             <img src={bag} alt='bag' /> <span>Cart</span>
                         </button>
                     </div>

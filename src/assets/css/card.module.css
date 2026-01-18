@@ -1,0 +1,141 @@
+.cartPage {
+    /* background: #000; */
+    padding: 45px 0;
+}
+
+.cartBox {
+    background: #fff;
+    width: 75%;
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid #f3f0f0;
+    overflow: hidden;
+}
+
+/* HEADER */
+.cartHeader {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr 1fr 0.5fr;
+    padding: 18px 30px;
+    background: #f1f1f1;
+    font-weight: 500;
+    color: #333;
+}
+
+/* ROW */
+.cartRow {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr 1fr 0.5fr;
+    padding: 6px 30px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.product img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* PRICE */
+.price,
+.total {
+    font-size: 14px;
+    color: #555;
+}
+
+/* QTY */
+.qty {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #e5e5e5;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.qty button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.qty span {
+    font-size: 14px;
+}
+
+/* DELETE */
+.delete {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* FOOTER */
+.cartFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 16px;
+}
+
+.continue {
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.checkout {
+    background: #ff3b30;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.checkout:hover {
+    background: #e63228;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    .cartHeader,
+    .cartRow {
+        grid-template-columns: 2fr 1fr 1.5fr 1fr 0.5fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .cartHeader {
+        display: none;
+    }
+
+    .cartRow {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cartFooter {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

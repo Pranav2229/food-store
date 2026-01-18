@@ -7,10 +7,11 @@ import bannerdeals from '../../assets/Image/bannerdeals.png'
 import Fattoushsalad from '../../assets/Image/Fattoushsalad.png'
 import image28 from '../../assets/Image/image28.png'
 import stayhome from '../../assets/Image/stayhome.png'
-
+// import HeroCanvas from './Canva'
 function Home(props) {
     return (
         <>
+            {/* <HeroCanvas /> */}
             <section className={styles.categorySection}>
                 {/* Background / Texture */}
                 <div className={styles.bgImage}>
