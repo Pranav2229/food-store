@@ -8,6 +8,7 @@ import NotFound from '../pages/NotFound';
 import BlogPost from '../pages/BlogPost';
 import Registration from '../pages/Registration';
 import Login from '../pages/Login';
+import Checkout from '../pages/Checkout';
 function AppRoutes(props) {
     return (
         <>
@@ -19,9 +20,7 @@ function AppRoutes(props) {
                 <Route path="/blog" element={<BlogPost />} />
                 <Route path="/register" element={<Registration />} />
                 <Route path="/login" element={<Login />} />
-
-                {/* <Route path="/checkout" element={<Checkout />} />
-                <Route path="/login" element={<Login />} />*/}
+                <Route path="/checkout" element={<Checkout />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </>

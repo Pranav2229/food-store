@@ -2,7 +2,9 @@ import React from 'react'
 import styles from '../../assets/css/card.module.css'
 import product1 from '../../assets/Image/product/1.png'
 import MostPopular from '../components/MostPopular'
+import { useNavigate } from 'react-router-dom'
 function Cart(props) {
+    const navigate = useNavigate()
     const cartItems = [
         {
             id: 1,
@@ -74,7 +76,7 @@ function Cart(props) {
                     {/* FOOTER */}
                     <div className={styles.cartFooter}>
                         <a className={styles.continue}>Continue Shopping</a>
-                        <button className={styles.checkout}>Check Out</button>
+                        <button className={styles.checkout} onClick={() => navigate('/checkout')}>Check Out</button>
                     </div>
 
                 </div>
